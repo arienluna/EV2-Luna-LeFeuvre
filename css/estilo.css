@@ -53,7 +53,7 @@ h1,h2,h3,h4,h5{
 	
 }
 .logo2:hover{ 
-	background-color: rgb(243, 207, 248);
+	background-color: rgba(238, 211, 240, 0.85);
 }
 .logo1{
 	display: flex;
@@ -97,7 +97,7 @@ h1,h2,h3,h4,h5{
     font-size: 1.5em;
 }
 .icon-menu:hover{
-    background-color: rgb(243, 153, 236);
+    background-color: rgba(119, 84, 121, 0.85);
 }
 
 .social-icon{
@@ -136,7 +136,7 @@ h1,h2,h3,h4,h5{
     height: 0;
     overflow: hidden;
 	transition: height .3s linear;
-	background-color: rgba(199, 114, 202, 0.85); 
+	background-color: rgba(119, 84, 121, 0.85); 
 }
 .menu__link{
     display: block;
@@ -279,14 +279,15 @@ h1,h2,h3,h4,h5{
 .today-special .column {
 	margin-bottom: 30px;
 	text-align: center;
-	border: 5px solid rgb(99, 7, 79);
+	
 	
 }
 
 .today-special__img{
 	margin: auto;
 	max-width: 350px;
-	
+	border: 2px solid rgb(80, 10, 76);
+	border-radius: 3%;
 	
 }
 
@@ -304,7 +305,7 @@ h1,h2,h3,h4,h5{
 
 /*----------------Estilos Principales------------------*/
 .main-footer{
-	background: rgba(199, 114, 202, 0.85);
+	background: rgba(119, 84, 121, 0.85);
 	color: #fff;
 	padding: 10px;
 	padding-top: 20px;
@@ -330,6 +331,43 @@ h1,h2,h3,h4,h5{
 	right: 5px;
 }
 
+/*----------------Galeria----------------------*/
+.header2{
+	height: 100px;
+	position: relative;
+	width: 100%;
+	top: 0;
+	text-align: center;
+	font-size: 40px;
+	color: rgb(93, 2, 105);
+	text-shadow: 2px 2px rgb(126, 108, 108);
+	padding-top: 20px;
+}
+.galeria1{
+	display: flex; 
+	justify-content: space-between; 
+	padding-bottom: 140px;
+}
+.galeria2{
+	display: flex; 
+	justify-content: space-between; 
+	padding-top: 20px;
+	padding-bottom: 0px;
+	text-align: center;
+}
+.imagenes-row{
+	flex: 1;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.tamaño-imagen{
+	max-width: 100%;
+	border: 5px solid rgb(99, 7, 79);
+	border-radius: 10px;
+}
 /*----------------Estilos Responsivos------------------*/
 
 @media screen and (min-width:480px){
@@ -351,7 +389,7 @@ h1,h2,h3,h4,h5{
 		color: #fff;
 	}
 	.main_nav{
-		background:rgba(199, 114, 202, 0.85);
+		background:rgba(119, 84, 121, 0.85);
 	}
 	.banner__content{
 		font-size:1.5em;
@@ -377,8 +415,9 @@ h1,h2,h3,h4,h5{
 		margin: 0;
 	}
 	.today-special .column {
-		border: 2px solid rgb(80, 10, 76);
-		border-radius: 3%;
+		border: 0px solid rgb(80, 10, 76);
+		background-color: #eacaee;
+		border-radius: 5%;
 		padding: 5px;
 	}
 	.today-special__img{
