@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Zen+Loop:ital@0;1&display=swap');
+
 *{
     box-sizing: border-box;
 }
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Advent Pro", sans-serif;
     margin: 0;
+	background-color: rgb(243, 223, 239);
+    background-image: url(/imagenes/background.png); 
+    background-size: 50px;
+    background-blend-mode: overlay;
 }
 /*----------------Estilos Base------------------*/
 img{
@@ -18,15 +23,18 @@ h1,h2,h3,h4,h5{
 .container{
     width: 100%;
     margin: auto;
+	
 }
 .container--flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+	
 }
 .column{
     width: 100%;
+	
 }
 
 /*----------------Estilos Header------------------*/
@@ -37,16 +45,17 @@ h1,h2,h3,h4,h5{
 }
 .logo{
     font-size: 1.9em;
-    color: #de423a;
+    color: rgb(80, 10, 76);
     padding: 10px;
-    font-family: 'Sacramento', cursive;
+    font-family: 'Zen Loop', cursive;
         
 }
 .main-header__contactInfo__phone{
-    background:#de423a;
+    background:rgb(80, 10, 76);
     color: #fff;
     padding: 10px;
     margin: 0;
+	
 }
 
 .main-header__contactInfo__addres{
@@ -68,8 +77,8 @@ h1,h2,h3,h4,h5{
 
 .icon-menu{
     display: block;
-    color: #fff;
-    border: 1px solid #fff;
+    color: rgb(80, 10, 76);
+    border: 1px solid rgb(80, 10, 76);
     border-radius: 3px;
     width: 40px;
     height: 40px;
@@ -77,7 +86,9 @@ h1,h2,h3,h4,h5{
     text-align: center;
     cursor:pointer;
     font-size: 1.5em;
-    
+}
+.icon-menu:hover{
+    background-color: rgb(243, 153, 236);
 }
 
 .social-icon{
@@ -87,7 +98,7 @@ h1,h2,h3,h4,h5{
 }
 
 .social-icon [class*="icon-"]{
-    color: black;
+    color: rgb(80, 10, 76);
     margin-left: 10px;
     display: flex;
     justify-content: center;
@@ -100,17 +111,14 @@ h1,h2,h3,h4,h5{
 }
 
 .social-icon__link{
-    text-decoration: none;
-   
+    text-decoration: none;  
 }
-
 .menu{
-    
+	
     position: absolute;
     top: 75px;
     left: 0;
     width: 100%;
-    background: rgba(0,0,0,.85);
     padding:0px;
     margin:0px;
     z-index: 2000px;
@@ -120,6 +128,7 @@ h1,h2,h3,h4,h5{
     height: 0;
     overflow: hidden;
 	transition: height .3s linear;
+	background-color: rgba(199, 114, 202, 0.85); 
 }
 
 .menu__link{
@@ -131,10 +140,10 @@ h1,h2,h3,h4,h5{
     
 }
 .menu__link:hover{
-     background-color: #DE423A;
+    background-color: rgb(80, 10, 76);
 }
 .menu__link--select{
-    background-color: #DE423A;
+    background-color: rgb(80, 10, 76);
     
 }
 .mostrar{
@@ -171,27 +180,33 @@ h1,h2,h3,h4,h5{
     transform: translateX(-50%) translateY(-50%);
     font-size: 1.5em;
     font-weight:bold;
-    
+	font-family: 'Zen Loop', cursive;
+    text-shadow: 5px 2px #410649;
+	padding-top: 80px;
 }
 
 /*----------------Estilos Principales------------------*/
 .group--color .container{
-	background-color: #DE423A;
+	background-color: rgb(80, 10, 76);
 	padding: 10px;
 	text-align: center;
-	
+	color: white;
+	font-style: italic;
 }
 .main__title{
 	margin: 15px 0;
 	font-size: 2.8em;
-	font-family: 'Sacramento',cursive;
+	font-family: 'Zen Loop', cursive;
+	font-style: italic;
 	
 }
 .column__title{
 	font-size: 1.3em;
+	
 }
 .main__about_description .column:nth-child(2){
 	padding: 10px;
+	
 }
 .btn{
 	
@@ -199,28 +214,35 @@ h1,h2,h3,h4,h5{
 	text-align: center;
 	text-decoration: none;
 	width: 120px;
-	background: #DE423A;
+	background: rgb(80, 10, 76);
 	color: #fff;
 	padding:10px;
 	margin: 10px auto;
 	
+	
 }
 .group__title{
-	font-family:'Sacramento',cursive;
+	font-family: 'Zen Loop', cursive;
+	font-style: italic;
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.8em;
 	margin: 30px;
+	
 }
 
 .today-special .column {
 	margin-bottom: 30px;
 	text-align: center;
+	border: 5px solid rgb(99, 7, 79);
+	
 }
 
 .today-special__img{
 	margin: auto;
 	max-width: 350px;
+	
+	
 }
 
 .today-special__tittle{
@@ -231,13 +253,13 @@ h1,h2,h3,h4,h5{
 }
 .today-special__price{
 	font-size: 1.5em;
-	color: #DE423a;
+	color: rgb(80, 10, 76);
 	font-weight: bold;
 }
 
 /*----------------Estilos Principales------------------*/
 .main-footer{
-	background: #222;
+	background: rgba(199, 114, 202, 0.85);
 	color: #fff;
 	padding: 10px;
 	padding-top: 20px;
@@ -284,7 +306,7 @@ h1,h2,h3,h4,h5{
 		color: #fff;
 	}
 	.main_nav{
-		background:rgba(0,0,0,0.85);
+		background:rgba(199, 114, 202, 0.85);
 	}
 	.banner__content{
 		font-size:1.5em;
@@ -337,8 +359,6 @@ h1,h2,h3,h4,h5{
 		font-size: 1.18em;
 		padding-right: 0px;
 		
-		
-		
 	}
 	
 	.main_nav{
@@ -369,7 +389,8 @@ h1,h2,h3,h4,h5{
 	.group--color .container{
 		margin-top: 30px;
 		margin-bottom: 30px;
-		padding: 20px
+		padding: 20px;
+		
 	
 	}
 	.main__title{
