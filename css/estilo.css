@@ -2,6 +2,7 @@
 
 *{
     box-sizing: border-box;
+	margin: 0 0;
 }
 body{
     font-family: "Advent Pro", sans-serif;
@@ -44,11 +45,14 @@ h1,h2,h3,h4,h5{
     width: 100%;
 }
 .logo{
-    font-size: 1.9em;
-    color: rgb(80, 10, 76);
-    padding: 10px;
-    font-family: 'Zen Loop', cursive;
-        
+	background-color: aliceblue;
+	border-radius: 100px;
+	max-height: 93px;
+	max-width: 94px;
+	margin-top: 8px;
+}
+.logo2:hover{ 
+	background-color: rgb(243, 207, 248);
 }
 .main-header__contactInfo__phone{
     background:rgb(80, 10, 76);
@@ -154,20 +158,32 @@ h1,h2,h3,h4,h5{
 .banner{
     margin-top:-52px;
     position: relative;
+	display: flex;
+	background-image: url(/imagenes/foto1.jpg);
+	
 }
 .banner:before {
     content: '';
-    position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.7);
+    background: rgba(2, 0, 0, 0.7);
     z-index: 1000;
     top: 0;
+	width: 100%;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	object-fit: cover;
 }
 .banner__img{
     width: 100%;
     height: 400px;
-    object-fit: cover
+    object-fit: cover;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	
 }
 .banner__content {
     width: 70%;
@@ -184,7 +200,26 @@ h1,h2,h3,h4,h5{
     text-shadow: 5px 2px #410649;
 	padding-top: 80px;
 }
-
+#apartado1{
+	width: 100%;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	object-fit: cover;
+}
+.ap1:hover{
+	font-size: 55px;
+	text-size-adjust: 20px;
+	transition: all 500ms;
+	padding: 0px 0px;
+}
+.seccion-con-imagen{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
 /*----------------Estilos Principales------------------*/
 .group--color .container{
 	background-color: rgb(80, 10, 76);
@@ -223,11 +258,11 @@ h1,h2,h3,h4,h5{
 }
 .group__title{
 	font-family: 'Zen Loop', cursive;
-	font-style: italic;
 	text-align: center;
 	font-weight: bold;
-	font-size: 1.8em;
+	font-size: 2em;
 	margin: 30px;
+	text-shadow: #410649;
 	
 }
 
@@ -398,8 +433,10 @@ h1,h2,h3,h4,h5{
 	}
 	.main__about_description .column--50:nth-child(2) .column__txt
 	{
-		line-height: 55px;
+		line-height: 30px;
 		text-align: justify;
+		font-size: 17px;
+		font-weight: 500;
 		
 	}
 	.group__title{
