@@ -24,6 +24,7 @@
 .our-team__txt{
 	padding: 10px;
 	text-align:justify;
+	font-weight: bold;
 }
 
 @media screen and (min-width:480px){
