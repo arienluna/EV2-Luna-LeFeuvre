@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Zen+Loop:ital@0;1&display=swap');
+
 .our-team{
 	text-align: center;
 	margin-bottom: 20px;
@@ -6,13 +8,13 @@
 	align-items: flex-start;
 }
 .our-team__title{
-	font-family: 'Pacifico',cursive;
-	color: #de423a;
-	font-size: 1.8em;
+	font-family: 'Zen loop',cursive;
+	color: rgb(80, 10, 76);
+	font-size: 2.5em;
 	margin-bottom: 10px;
+	font-weight: bold;
 }
-.our-team__img
-{
+.our-team__img{
 	width: 180px;
 	height: 180px;
 	object-fit: cover;
