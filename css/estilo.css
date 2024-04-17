@@ -249,6 +249,12 @@ h1,h2,h3,h4,h5{
 	align-items: center;
 	margin-bottom: 30px;
 }
+.img3{
+	border-radius: 2%;
+}
+.img3:hover{
+	transform: scale(1.02);
+}
 /*----------------Estilos Principales------------------*/
 .group--color .container{
 	background-color: rgb(80, 10, 76);
@@ -355,7 +361,9 @@ h1,h2,h3,h4,h5{
 	top: 3px;
 	right: 5px;
 }
-
+.ft-icon:hover{
+	color:  rgb(80, 10, 76);
+}
 /*----------------Galeria----------------------*/
 
 .container2{
