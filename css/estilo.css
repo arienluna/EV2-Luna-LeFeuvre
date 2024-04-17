@@ -69,6 +69,7 @@ h1,h2,h3,h4,h5{
 }
 .logo:hover{ 
 	background-color: rgba(238, 211, 240, 0.85);
+	transform: scale(1.02);
 }
 .logo1{
 	display: flex;
@@ -284,6 +285,10 @@ h1,h2,h3,h4,h5{
 	
 	
 }
+.btn:hover{
+	background: rgba(119, 84, 121, 0.85);
+	transform: scale(1.02);
+}
 .group__title{
 	font-family: 'Zen Loop', cursive;
 	text-align: center;
@@ -320,7 +325,9 @@ h1,h2,h3,h4,h5{
 	color: rgb(80, 10, 76);
 	font-weight: bold;
 }
-
+.today-special__img:hover{
+	transform: scale(1.2);
+}
 /*----------------Estilos Principales------------------*/
 .main-footer{
 	background: rgba(119, 84, 121, 0.85);
@@ -524,7 +531,11 @@ h1,h2,h3,h4,h5{
 }
 
 
-
+@media screen and (max-width:1023px){
+	.logo{
+		max-width: 55px;
+	}
+}
 
 
 
