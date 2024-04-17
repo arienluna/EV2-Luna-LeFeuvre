@@ -27,6 +27,11 @@
 	font-weight: bold;
 }
 
+.form{
+	display: flex;
+	text-align: center;
+	padding: 10x 30px;
+}
 @media screen and (min-width:480px){
 	.our-team__img{
 		width: 200px;

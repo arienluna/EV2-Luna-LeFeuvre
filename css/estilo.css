@@ -26,11 +26,24 @@ h1,h2,h3,h4,h5{
     margin: auto;
 	
 }
+.container2{
+    width: 100%;
+    margin: auto;
+	
+}
 .container--flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+	
+}
+.container2--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+	padding: auto;
 	
 }
 .column{
@@ -167,9 +180,6 @@ h1,h2,h3,h4,h5{
 .banner{
     margin-top:-52px;
     position: relative;
-	
-	
-	
 }
 .banner:before {
     content: '';
@@ -285,8 +295,8 @@ h1,h2,h3,h4,h5{
 
 .today-special__img{
 	margin: auto;
-	max-width: 350px;
-	border: 2px solid rgb(80, 10, 76);
+	max-width: 2000px;
+	border: 0px solid rgb(80, 10, 76);
 	border-radius: 3%;
 	
 }
@@ -332,41 +342,14 @@ h1,h2,h3,h4,h5{
 }
 
 /*----------------Galeria----------------------*/
-.header2{
-	height: 100px;
-	position: relative;
-	width: 100%;
-	top: 0;
-	text-align: center;
-	font-size: 40px;
-	color: rgb(93, 2, 105);
-	text-shadow: 2px 2px rgb(126, 108, 108);
-	padding-top: 20px;
-}
-.galeria1{
-	display: flex; 
-	justify-content: space-between; 
-	padding-bottom: 140px;
-}
-.galeria2{
-	display: flex; 
-	justify-content: space-between; 
-	padding-top: 20px;
-	padding-bottom: 0px;
-	text-align: center;
-}
-.imagenes-row{
-	flex: 1;
-	text-align: center;
-	width: 300px;
+
+.today-special2__img{
 	height: 300px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-.tamaño-imagen{
-	max-width: 100%;
-	border: 5px solid rgb(99, 7, 79);
-	border-radius: 10px;
+	object-fit: cover;
+	border: 2px solid rgb(80, 10, 76);
+	margin: 4px 4px;
+	justify-content: space-between;
+	border-radius: 5%;
 }
 /*----------------Estilos Responsivos------------------*/
 
@@ -392,7 +375,7 @@ h1,h2,h3,h4,h5{
 		background:rgba(119, 84, 121, 0.85);
 	}
 	.banner__content{
-		font-size:1.5em;
+		font-size:2em;
 	}
 	.column--50{
 		width: 49%;
@@ -420,15 +403,20 @@ h1,h2,h3,h4,h5{
 		border-radius: 5%;
 		padding: 5px;
 	}
-	.today-special__img{
-		height: 200px;
-		object-fit: cover;
-	}
 	.main-footer .container--flex{
 		align-items: flex-start;
 	}
-	
-	
+	.today-special .column {
+		border: 0px solid rgb(80, 10, 76);
+		background-color: #eacaee;
+		border-radius: 5%;
+		padding: 5px;
+	}
+	.today-special__img{
+		height: 200px;
+		object-fit: cover;
+		border: 0px solid rgb(80, 10, 76);
+	}
 }
 @media screen and (min-width:1024px){
 .container{
@@ -507,7 +495,15 @@ h1,h2,h3,h4,h5{
 	}
 }
 
-
+@media screen and (min-width:480px) and (max-width: 1023px){
+	.imagenes-row{
+		width: auto;
+		margin: 0px;
+	}
+	.tamaño-imagen{
+		width: auto;
+	}
+}
 
 
 
