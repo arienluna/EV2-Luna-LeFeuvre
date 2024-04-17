@@ -2,7 +2,9 @@
 
 *{
     box-sizing: border-box;
-	margin: 0 0;
+	margin: 0;
+	padding: 0;
+	transition: 0.2s linear;
 }
 body{
     font-family: "Advent Pro", sans-serif;
@@ -343,13 +345,23 @@ h1,h2,h3,h4,h5{
 
 /*----------------Galeria----------------------*/
 
-.today-special2__img{
-	height: 300px;
-	object-fit: cover;
-	border: 2px solid rgb(80, 10, 76);
-	margin: 4px 4px;
-	justify-content: space-between;
-	border-radius: 5%;
+.container2{
+    padding: 2rem 5%;
+}
+
+.container2 .image-container{
+    columns: 15rem 3;
+    gap: 1.4rem;
+}
+
+.container2 .image-container img{
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.7rem;
+}
+
+.container2 .image-container img:hover{
+    transform: scale(1.01);
 }
 /*----------------Estilos Responsivos------------------*/
 
