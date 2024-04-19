@@ -384,6 +384,80 @@ h1,h2,h3,h4,h5{
 .container2 .image-container img:hover{
     transform: scale(1.01);
 }
+/*---------------------Formulario-----------------------*/
+.campos{
+	font-family: 'Zen loop',cursive; 
+	font-size: 30px;
+	font-weight: bold;
+	max-width: 700px;
+	width: 100%;
+	background: #eacaee;
+	padding: 25px;
+	border-radius: 8px;
+	box-shadow: 0 0 7px rgba(0,0,0, 0.1);
+	position: relative;
+}
+.formulario{
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.formulario .campos{
+	margin-top: 30px;
+}
+.form{
+	width: 100%;
+	margin-top: 20px;
+}
+.form label{
+	color: #410649;
+}
+.campos .form input{
+	position: relative;
+	height: 40px;
+	width: 100%;
+	outline: none;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 0 15px;
+	font-size: 1.04rem;
+	color: #a19e9e;
+	font-family: "Advent Pro", sans-serif;
+	margin-top: 8px;
+}
+.campos .mensaje input{
+	height: 100px;
+	align-content: s;
+	
+}
+.campos .columna{
+	display: flex;
+	column-gap: 15px;
+}
+input, textarea{
+	width: 100%;
+	padding: 10px;
+	outline: none;
+	border: 1px solid #ddd;
+	color: #a19e9e;
+	font-family: "Advent Pro", sans-serif;
+	margin-top: 8px;
+	border-radius: 6px;
+	font-size: 1.04rem;
+}
+/*----------------Mapa------------------*/
+.mapa{
+	display: block;
+	align-items: center;
+	justify-content: center;
+	margin-left: 30px;
+	
+	margin-top: 75px;
+}
+.cont2{
+	display: flex;
+}
 /*----------------Estilos Responsivos------------------*/
 
 @media screen and (min-width:480px){
@@ -542,6 +616,24 @@ h1,h2,h3,h4,h5{
 @media screen and (max-width:1023px){
 	.logo{
 		max-width: 55px;
+	}
+	.campos{
+		max-width: 480px;
+		margin: auto;
+		flex-wrap: wrap;
+	}
+	.campos .columna{
+		flex-wrap: wrap;
+	}
+	.cont2{
+		display: block;
+	}
+	.mapa iframe{
+		max-width: 450px;
+		flex-wrap: wrap;
+	}
+	.mapa{
+		margin: 20px;
 	}
 }
 

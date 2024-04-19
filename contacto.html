@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="./imagenes/logo2.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
 </head>
 <body>
     <header class="main-header">
@@ -51,27 +51,39 @@
         <img src="imagenes/foto5.jpg" alt="" class="banner__img">
         <div class="banner__content">Trabajamos y cultivamos hongos alimenticios y medicinales, para acercar y disponibilizar su potencial de salud a personas y animales.</div>
     </section>
-    <main class="main">
+    <main class="formulario">
         <section class="group--color">
             <div class="container">
                 <h2 class="main__title">Contáctanos</h2>
             </div>
-            <div class="form">
-                <div class="mb-3 form">
-                    <label for="formGroupExampleInput" class="form-label" style="font-family: 'Zen loop',cursive; font-size: 30px;font-weight: bold; padding: 0px 20px;">Nombre</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+            <div class="cont2">
+            <div class="campos">
+                <div class="form">
+                    <label for="formGroupExampleInput">Nombre completo</label>
+                    <input type="text" placeholder="Ingrese su nombre completo" required>
                 </div>
-                <div class="mb-3">
-                    <label for="formGroupExampleInput2" class="form-label" style="font-family: 'Zen loop',cursive; font-size: 30px;font-weight: bold">Correo electrónico</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                <div class="columna">
+                <div class="form">
+                    <label for="formGroupExampleInput2">Correo electrónico</label >
+                    <input type="text" placeholder="Ingrese su correo electrónico">
                 </div>
-                <div class="mb-3">
-                    <label for="formGroupExampleInput2" class="form-label" style="font-family: 'Zen loop',cursive; font-size: 30px;font-weight: bold">Mensaje</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                <div class="form">
+                    <label for="formGroupExampleInput2">Número de contacto</label>
+                    <input type="text" placeholder="Ingrese su número de contacto" required>
+                </div></div>
+                <div class="form mensaje">
+                    
+                    <label for="message">Mensaje</label >
+                    <textarea id="message" rows="8"></textarea>
                 </div>
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn--contact" style="font-family: 'Advent Pro', sans-serif; font-size: 16px; border-radius: 8px;">Enviar</button>
                 </div>
+
+            </div >
+            <div>
+                <p class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6592.238181034724!2d-71.44437536585015!3d-34.29650912417719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966391c49702a979%3A0x31a2a65f4fa0e862!2sSan%20Jos%C3%A9%20de%20Marchihue%2C%20Pichidegua%2C%20O&#39;Higgins!5e0!3m2!1sen!2scl!4v1713497379482!5m2!1sen!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
             </div>
     </main>
     <footer class="main-footer">
